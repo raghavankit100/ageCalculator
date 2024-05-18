@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+  </head>
+  <style>
+    * {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: sans-serif;
+      border: none;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: rgb(183, 192, 17);
+      background: radial-gradient(
+        circle,
+        rgb(230, 233, 51) 37%,
+        rgb(184, 102, 60) 100%
+      );
+    }
+
+    .dateInput,
+    .year,
+    .month,
+    .days {
+      background-color: black;
+      padding: 30px;
+      border: none;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .date {
+      padding: 10px 40px;
+      margin-right: 20px;
+      border-radius: 6px;
+    }
+    .btn {
+      border-radius: 6px;
+      padding: 15px 20px;
+    }
+    .dateFormat {
+      display: flex;
+      justify-content: space-between;
+
+      width: 100%;
+    }
+    .year,
+    .month,
+    .days {
+      width: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form action="" class="dateInput">
+        <input type="date" class="date" />
+        <input type="submit" value="Calculate" class="btn" />
+      </form>
+      <div class="dateFormat">
+        <div>
+          <p class="year">
+            <span class="yearValue">-</span>
+            <span>Years</span>
+          </p>
+        </div>
+        <div>
+          <p class="month">
+            <span class="monthValue">-</span>
+            <span>Months</span>
+          </p>
+        </div>
+        <div>
+          <p class="days">
+            <span class="daysValue">-</span>
+            <span>days</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
